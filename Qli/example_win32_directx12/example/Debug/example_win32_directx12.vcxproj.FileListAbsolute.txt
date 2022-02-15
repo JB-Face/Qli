@@ -1,1 +1,0 @@
-C:\Qli\Qli\example_win32_directx12\example\Debug\example_win32_directx12.exe

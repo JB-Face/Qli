@@ -78,9 +78,13 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\GIT\Qli\Lib;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.20348.0\um;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.20348.0\shared;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.20348.0\um\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>E:\GIT\Qli\Lib;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.20348.0\um;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.20348.0\shared;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.20348.0\um\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -141,18 +145,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="imgui\imgui.cpp" />
-    <ClCompile Include="imgui\imgui_impl_dx12.cpp" />
-    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\..\Lib\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\Lib\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\Lib\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\Lib\imgui\imgui_impl_dx12.cpp" />
+    <ClCompile Include="..\..\Lib\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\..\Lib\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\..\Lib\imgui\imgui_widgets.cpp" />
     <ClCompile Include="lweleth.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="imgui\imconfig.h" />
-    <ClInclude Include="imgui\imgui.h" />
-    <ClInclude Include="imgui\imgui_impl_dx12.h" />
-    <ClInclude Include="imgui\imgui_impl_win32.h" />
-    <ClInclude Include="imgui\imgui_internal.h" />
-    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="..\..\Lib\imgui\imconfig.h" />
+    <ClInclude Include="..\..\Lib\imgui\imgui.h" />
+    <ClInclude Include="..\..\Lib\imgui\imgui_impl_dx12.h" />
+    <ClInclude Include="..\..\Lib\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="..\..\Lib\imgui\imgui_internal.h" />
+    <ClInclude Include="..\..\Lib\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\..\Lib\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\..\Lib\imgui\imstb_truetype.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

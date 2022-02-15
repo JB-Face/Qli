@@ -19,45 +19,57 @@
     <Filter Include="imgui">
       <UniqueIdentifier>{953ec4e6-f0b6-4656-9dfc-cd69ebdc725e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="imgui\h">
-      <UniqueIdentifier>{dd045281-32e0-45c7-966f-7c323cef4322}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="imgui\cpp">
-      <UniqueIdentifier>{7c7b76ab-b70c-4e79-9078-4233f4c0bf16}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="lweleth.cpp">
       <Filter>main</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui.cpp">
-      <Filter>imgui\cpp</Filter>
+    <ClCompile Include="..\..\Lib\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui_impl_dx12.cpp">
-      <Filter>imgui\cpp</Filter>
+    <ClCompile Include="..\..\Lib\imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui_impl_win32.cpp">
-      <Filter>imgui\cpp</Filter>
+    <ClCompile Include="..\..\Lib\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lib\imgui\imgui_impl_dx12.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lib\imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lib\imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lib\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="imgui\imgui_impl_win32.h">
-      <Filter>imgui\h</Filter>
+    <ClInclude Include="..\..\Lib\imgui\imconfig.h">
+      <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imgui_impl_dx12.h">
-      <Filter>imgui\h</Filter>
+    <ClInclude Include="..\..\Lib\imgui\imgui.h">
+      <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imgui.h">
-      <Filter>imgui\h</Filter>
+    <ClInclude Include="..\..\Lib\imgui\imgui_impl_dx12.h">
+      <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imconfig.h">
-      <Filter>imgui\h</Filter>
+    <ClInclude Include="..\..\Lib\imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imgui_internal.h">
-      <Filter>imgui\h</Filter>
+    <ClInclude Include="..\..\Lib\imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imstb_textedit.h">
-      <Filter>imgui\h</Filter>
+    <ClInclude Include="..\..\Lib\imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lib\imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lib\imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
