@@ -78,7 +78,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>E:\GIT\Qli\Lib;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.20348.0\um;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.20348.0\shared;$(IncludePath)</IncludePath>
+    <IncludePath>..\..\Lib;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.20348.0\um;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.20348.0\shared;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.20348.0\um\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
