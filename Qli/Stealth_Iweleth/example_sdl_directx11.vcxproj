@@ -22,7 +22,7 @@
     <ProjectGuid>{9E1987E3-1F19-45CA-B9C9-D31E791836D8}</ProjectGuid>
     <RootNamespace>example_sdl_directx11</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>example_sdl_directx11</ProjectName>
+    <ProjectName>Stealth_Iweleth</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -173,7 +173,6 @@
     <ClInclude Include="..\..\Lib\imgui\imgui_internal.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\Lib\SDL2\lib\x64\SDL2.dll" />
     <None Include="..\..\misc\debuggers\imgui.natvis" />
     <None Include="..\README.txt" />
   </ItemGroup>
