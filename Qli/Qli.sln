@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1", "Project1\Projec
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stealth_Iweleth", "Stealth_Iweleth\Stealth_Iweleth.vcxproj", "{A7614826-4276-46A4-A2EA-51342335D45F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "example_sdl_directx11", "SDLSample\example_sdl_directx11.vcxproj", "{9E1987E3-1F19-45CA-B9C9-D31E791836D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{A7614826-4276-46A4-A2EA-51342335D45F}.Release|x64.Build.0 = Release|x64
 		{A7614826-4276-46A4-A2EA-51342335D45F}.Release|x86.ActiveCfg = Release|Win32
 		{A7614826-4276-46A4-A2EA-51342335D45F}.Release|x86.Build.0 = Release|Win32
+		{9E1987E3-1F19-45CA-B9C9-D31E791836D8}.Debug|x64.ActiveCfg = Debug|x64
+		{9E1987E3-1F19-45CA-B9C9-D31E791836D8}.Debug|x64.Build.0 = Debug|x64
+		{9E1987E3-1F19-45CA-B9C9-D31E791836D8}.Debug|x86.ActiveCfg = Debug|Win32
+		{9E1987E3-1F19-45CA-B9C9-D31E791836D8}.Debug|x86.Build.0 = Debug|Win32
+		{9E1987E3-1F19-45CA-B9C9-D31E791836D8}.Release|x64.ActiveCfg = Release|x64
+		{9E1987E3-1F19-45CA-B9C9-D31E791836D8}.Release|x64.Build.0 = Release|x64
+		{9E1987E3-1F19-45CA-B9C9-D31E791836D8}.Release|x86.ActiveCfg = Release|Win32
+		{9E1987E3-1F19-45CA-B9C9-D31E791836D8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
