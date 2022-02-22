@@ -86,6 +86,18 @@ int main(int, char**)
     bool show_another_window = false;
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
+
+
+    //self sdl
+    SDL_Renderer* mRenderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+    if (!mRenderer)
+    {
+        SDL_Log("渲染器初始化失败: %s", SDL_GetError());
+        return false;
+    }
+
+
+
     // Main loop
     bool done = false;
     while (!done)
@@ -112,10 +124,35 @@ int main(int, char**)
             }
         }
 
+
+        // 设置渲染器颜色（蓝）
+        SDL_SetRenderDrawColor(mRenderer, 0, 0, 255, 255);
+
+        // 清除缓冲区
+        SDL_RenderClear(mRenderer);
+
+        // 设置渲染器颜色（白）
+        SDL_SetRenderDrawColor(mRenderer, 255, 255, 255, 255);
+
+        // 设置长方形的坐标以及宽高
+        SDL_Rect rect;
+        rect.x = 200;
+        rect.y = 200;
+        rect.w = 240;
+        rect.h = 80;
+        // 绘制长方形
+        SDL_RenderFillRect(mRenderer, &rect);
+
+        // 交换缓冲区
+        SDL_RenderPresent(mRenderer);
+
         // Start the Dear ImGui frame
         ImGui_ImplDX11_NewFrame();
         ImGui_ImplSDL2_NewFrame();
         ImGui::NewFrame();
+
+
+
 
         // 1. Show the big demo window (Most of the sample code is in ImGui::ShowDemoWindow()! You can browse its code to learn more about Dear ImGui!).
         if (show_demo_window)
