@@ -379,12 +379,12 @@ bool ImGui_ImplSDL2_InitForVulkan(SDL_Window* window)
     return ImGui_ImplSDL2_Init(window, NULL);
 }
 
-bool ImGui_ImplSDL2_InitForD3D(SDL_Window* window)
+bool ImGui_ImplSDL2_InitForD3D(SDL_Window* window, SDL_Renderer* renderer)
 {
 #if !defined(_WIN32)
     IM_ASSERT(0 && "Unsupported");
 #endif
-    return ImGui_ImplSDL2_Init(window, NULL);
+    return ImGui_ImplSDL2_Init(window, renderer);
 }
 
 bool ImGui_ImplSDL2_InitForMetal(SDL_Window* window)
@@ -517,6 +517,20 @@ void ImGui_ImplSDL2_NewFrame()
     IM_ASSERT(bd != NULL && "Did you call ImGui_ImplSDL2_Init()?");
     ImGuiIO& io = ImGui::GetIO();
 
+        // ÉèÖÃäÖÈ¾Æ÷ÑÕÉ«£¨À¶£©
+    SDL_SetRenderDrawColor(bd->Renderer, 0, 0, 255, 255);
+
+    // Çå³ý»º³åÇø
+    SDL_RenderClear(bd->Renderer);
+
+
+
+
+
+    // ½»»»»º³åÇø
+    SDL_RenderPresent(bd->Renderer);
+
+
     // Setup display size (every frame to accommodate for window resizing)
     int w, h;
     int display_w, display_h;
@@ -536,6 +550,7 @@ void ImGui_ImplSDL2_NewFrame()
     Uint64 current_time = SDL_GetPerformanceCounter();
     io.DeltaTime = bd->Time > 0 ? (float)((double)(current_time - bd->Time) / frequency) : (float)(1.0f / 60.0f);
     bd->Time = current_time;
+
 
     ImGui_ImplSDL2_UpdateMouseData();
     ImGui_ImplSDL2_UpdateMouseCursor();

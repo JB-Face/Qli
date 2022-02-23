@@ -161,6 +161,7 @@
     <ClCompile Include="..\..\Lib\imgui\imgui_draw.cpp" />
     <ClCompile Include="..\..\Lib\imgui\imgui_impl_dx11.cpp" />
     <ClCompile Include="..\..\Lib\imgui\imgui_impl_sdl.cpp" />
+    <ClCompile Include="..\..\Lib\imgui\imgui_sdl.cpp" />
     <ClCompile Include="..\..\Lib\imgui\imgui_tables.cpp" />
     <ClCompile Include="..\..\Lib\imgui\imgui_widgets.cpp" />
     <ClCompile Include="main.cpp" />
@@ -171,6 +172,7 @@
     <ClInclude Include="..\..\Lib\imgui\imgui_impl_dx11.h" />
     <ClInclude Include="..\..\Lib\imgui\imgui_impl_sdl.h" />
     <ClInclude Include="..\..\Lib\imgui\imgui_internal.h" />
+    <ClInclude Include="..\..\Lib\imgui\imgui_sdl.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\misc\debuggers\imgui.natvis" />
