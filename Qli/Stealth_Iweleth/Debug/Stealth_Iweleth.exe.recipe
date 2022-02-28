@@ -5,7 +5,11 @@
       <FullPath>E:\GIT\Qli\Qli\Stealth_Iweleth\Debug\Stealth_Iweleth.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
-  <ContentFiles />
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>E:\GIT\Qli\Qli\Stealth_Iweleth\main.cpp</FullPath>
+    </ContentFile>
+  </ContentFiles>
   <SatelliteDlls />
   <NonRecipeFileRefs />
 </Project>

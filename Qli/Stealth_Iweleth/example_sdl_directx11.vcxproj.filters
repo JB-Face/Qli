@@ -7,6 +7,9 @@
     <Filter Include="sources">
       <UniqueIdentifier>{08e36723-ce4f-4cff-9662-c40801cf1acf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="asset">
+      <UniqueIdentifier>{2620dc2f-8fc8-4f93-baee-543c11cfdda4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Lib\imgui\imconfig.h">
@@ -62,5 +65,10 @@
     <None Include="..\..\misc\debuggers\imgui.natvis">
       <Filter>sources</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Assset\TETRIS\Main.png">
+      <Filter>asset</Filter>
+    </Image>
   </ItemGroup>
 </Project>
